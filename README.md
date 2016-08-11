@@ -1,4 +1,7 @@
 # get-or-else-use-default-es5
+
+![Build status](https://api.travis-ci.org/benbowes/get-or-else-use-default-es5.svg)
+
 Simple Get Or Else module written in JavaScript ES5.
 
 Request an object property at a given namespace with a backup value, incase the desired namespace does not yield a result.
