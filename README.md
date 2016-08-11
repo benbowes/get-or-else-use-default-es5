@@ -33,14 +33,14 @@ IE 9 or greater - [Array.every on Mozilla's compatibility chart](https://develop
  */
 
 var getOrElseUseDefault = function( someOrNoneObj ) {
-	var contextObj = someOrNoneObj.some[0];
+  var contextObj = someOrNoneObj.some[0];
   var namespace = someOrNoneObj.some[1].split('.');
   var value = contextObj; // reassigns to obj[key] on each array.every iteration
-	return (
-		namespace.every( function( key ) {
-  		return (value = value[key]) != undefined
-		})
-	) ? value : someOrNoneObj.none;
+  return (
+    namespace.every( function( key ) {
+      return (value = value[key]) != undefined
+    })
+  ) ? value : someOrNoneObj.none;
 };
 
 module.exports = getOrElseUseDefault;
