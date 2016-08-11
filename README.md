@@ -12,6 +12,8 @@ getOrElseUseDefault({ some: [window,'a.b.c'], none: {} });
 getOrElseUseDefault({ some: [window,'a'], none: {} })
 // {x:4} - does exist, so expected value is returned
 ```
+### NPM Package
+[get-or-else-use-default-es5](https://www.npmjs.com/package/get-or-else-use-default-es5)
 
 ### Browser compatibility
 IE 9 or greater - [Array.every on Mozilla's compatibility chart](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/every#Browser_compatibility)
