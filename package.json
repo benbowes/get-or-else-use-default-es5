@@ -4,7 +4,9 @@
   "description": "Get Or Else in Javascript ES5",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test:lint": "eslint index.js",
+    "test:unit": "mocha test.js",
+    "test": "npm run test:lint && npm run test:unit"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   },
   "homepage": "https://github.com/benbowes/get-or-else-use-default-es5#readme",
   "devDependencies": {
+    "eslint": "^3.2.2",
     "expect": "^1.20.2",
     "mocha": "^3.0.2"
   }
