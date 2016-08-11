@@ -4,6 +4,8 @@
 
 Simple Get Or Else module written in JavaScript ES5.
 
+Useful if you have an untrustworthy data source. It will probably save you a bit of if, else, then-ery.
+
 Request an object property at a given namespace with a backup value, incase the desired namespace does not yield a result.
 ```javascript
 var getOrElseUseDefault = require("get-or-else-use-default-es5");
