@@ -1,21 +1,3 @@
-# get-or-else-use-default-es5
-Simple Get Or Else module written in JavaScript ES5.
-
-Request an object property at a given namespace with a backup value, incase the desired namespace does not yield a result.
-```javascript
-window.a = {x:4};
-getOrElseUseDefault({ some: [window,'a.b.c'], none: {} });
-// {} - does not exist, so `none` is used
-getOrElseUseDefault({ some: [window,'a'], none: {} })
-// {x:4} - does exist, so expected value is returned
-```
-
-### Browser compatibility
-IE 9 or greater - [Array.every on Mozilla's compatibility chart](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/every#Browser_compatibility)
-
-### The Module
-
-```javascript
 /**
  * @param {Object} someOrNoneObj
  * @param {Array} someOrNoneObj.some
@@ -28,7 +10,7 @@ IE 9 or greater - [Array.every on Mozilla's compatibility chart](https://develop
  * GIVEN
  * window.a = {x:4}
  *
- * getOrElseUseDefault({ some: [window,'a.b.c'], none: {} }) // {} - does not exist, so `none` is used
+ * getOrElseUseDefault({ some: [window,'a.b.c'], none: ':/' }) // ':/' - does not exist, so `none` is used
  * getOrElseUseDefault({ some: [window,'a'], none: {} }) // {x:4} - does exist, so expected value is returned
  */
 
@@ -44,12 +26,3 @@ var getOrElseUseDefault = function( someOrNoneObj ) {
 };
 
 module.exports = getOrElseUseDefault;
-```
-
-### Run the tests
-Given you have [Node](https://nodejs.org/en/) installed, `cd` into this folder and:
-```
-npm install
-npm test
-
-```

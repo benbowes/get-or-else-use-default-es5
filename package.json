@@ -1,0 +1,32 @@
+{
+  "name": "get-or-else-use-default-es5",
+  "version": "1.0.0",
+  "description": "Get Or Else in Javascript ES5",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbowes/get-or-else-use-default-es5.git"
+  },
+  "keywords": [
+    "get",
+    "or",
+    "else",
+    "use",
+    "default",
+    "Javscript",
+    "ES5"
+  ],
+  "author": "Ben Bowes <bb.benbowes.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benbowes/get-or-else-use-default-es5/issues"
+  },
+  "homepage": "https://github.com/benbowes/get-or-else-use-default-es5#readme",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.0.2"
+  }
+}
