@@ -6,6 +6,8 @@ Simple Get Or Else module written in JavaScript ES5.
 
 Request an object property at a given namespace with a backup value, incase the desired namespace does not yield a result.
 ```javascript
+var getOrElseUseDefault = require("get-or-else-use-default-es5");
+
 window.a = {x:4};
 getOrElseUseDefault({ some: [window,'a.b.c'], none: {} });
 // {} - does not exist, so `none` is used
