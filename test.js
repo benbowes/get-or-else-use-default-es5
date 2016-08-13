@@ -4,12 +4,12 @@ var getOrElseUseDefault = require('./index');
 var testObj = {
   a: 1,
   b: {
-      p: null,
-      x: 3,
-      y: {
-        z: 56
-      }
+    p: null,
+    x: 3,
+    y: {
+      z: 56
     }
+  }
 };
 
 describe('getOrElseUseDefault', function(){

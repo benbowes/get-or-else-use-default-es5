@@ -1,6 +1,6 @@
 {
   "name": "get-or-else-use-default-es5",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Get Or Else in Javascript ES5",
   "main": "index.js",
   "scripts": {
